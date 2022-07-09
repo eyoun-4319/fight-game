@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pageHeader {
+	margin-left: 288px;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.playerControls {
+	float: left;
+	margin: 50px;
+	font-family: 'Press Start 2P', cursive;
+	padding-bottom: 3rem;
+}
+
+.controlHeader {
+	text-decoration: underline;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.reasonHeader {
+	 position: absolute;
+     color: black;
+     align-items: center;
+     justify-content: center;
+	 margin-left:82rem;	
+	 margin-top: -37rem;
+	font-family: "playfair-display";
+	font-style: italic;
+	font-weight: lighter;
+	font-size: 2rem;
+}
+
+.reasonParagraph {
+	font-family: "playfair-display";
+	font-style: italic;
+	font-weight: lighter;
+	font-size: 1.3rem;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	padding-left: 4px;
+	margin-left: 75rem;
+	margin-right: 15rem;
+	margin-top: -29rem;
+	letter-spacing: 2px;
+	line-height: 1.5em;
+	text-indent: 40px;
+}
+
+
+.tech-title {
+	padding: 3rem 0 3rem 0;
+	margin-left: 10rem;
+}
+
+.tech-list {
+	margin-right: 3rem;
+}
+
+.tech-item {
+	font-size: 1.5rem;
+}
+
+
+
+/* Header */ 
+
+.header {
+	clear: both;
+	height: 75px;
+}
+
+
+
+#logo {
+	float: left;
+	margin-left: 20px;
+	color: firebrick; 
+	width: 9rem;
+}
+
+.nav__list {
+	float: right;
+}
+
+
+
+
+li {
+	display: inline;
+	list-style-type: square;
+	padding-right: 20px;
+	color: #501B1D;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+a:link{
+	line-height: 75px;
+	height: 75px;
+	text-decoration: none;
+	color: #501B1D;
+	font-size: 1.4em;
+	font-style: italic;
+}
+
+a:active {
+	color: #E27D60;
+}
+
+a:hover { 
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: grey;
+}
+
+.hamburgerMenu {
+	float: right;
+	font-size: 2rem;
+	margin: 0 40px 0;
+	display: none;
+}
+
+
+
+#toggle {
+	display: none;
+}
+
+
+
+
+
+/*footer*/
+
+
+
+
+
+.copyRight {
+	float: left;
+	padding-top: 340px;
+	margin-left: -900px;
+	font-family: "playfair-display";
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.email {
+	float: right;
+	padding-right: 2rem;
+	font-size: .9rem;
+	padding-top: 320px;
+	font-family: "playfair-display";
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.mediaCopyRight {
+	display: none;
+}

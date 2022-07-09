@@ -1,0 +1,217 @@
+<!doctype html>
+<head>
+	<title> Java Game | Fighter</title>
+	  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+
+    }
+	  
+	  body {
+		  background-color: honeydew;
+	  }
+	  
+  </style>
+  <link href="gameStyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+	<div class="header">
+	<a href="../index.html"><img src="logo3.0.png" alt="logo" id="logo"></a>
+	
+	<label for="toggle" class="hamburgerMenu">&#9776;</label>
+	<input type="checkbox" id="toggle"/>
+	
+	
+		<ul class="nav__list">
+			<li class="nav__item"><a href="../index.html">Home</a></li>
+			<li class="nav__item"><a href="../myWork.html">My Work</a></li>
+			<li class="nav__item"><a href="../aboutme.html">About Me</a></li>
+		</ul>
+</div>
+	
+	
+  <!-- red container div -->
+  <div style="position: relative; display: inline-block; padding-top: 3rem;">
+    <!-- smaller red container div -->
+    <div
+      style="
+        position: absolute;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 20px;
+		padding-top: 2rem;
+      "
+    >
+      <!-- player health -->
+      <div
+        style="
+          position: relative;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          border-top: 4px solid white;
+          border-left: 4px solid white;
+          border-bottom: 4px solid white;
+        "
+      >
+        <div style="background-color: red; height: 30px; width: 100%"></div>
+        <div
+          id="playerHealth"
+          style="
+            position: absolute;
+            background: #818cf8;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+          "
+        ></div>
+      </div>
+
+      <!-- timer -->
+      <div
+        id="timer"
+        style="
+          background-color: black;
+          width: 100px;
+          height: 50px;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          border: 4px solid white;
+        "
+      >
+        10
+      </div>
+      <!-- enemy health -->
+      <div
+        style="
+          position: relative;
+          width: 100%;
+          border-top: 4px solid white;
+          border-bottom: 4px solid white;
+          border-right: 4px solid white;
+        "
+      >
+        <div style="background-color: red; height: 30px"></div>
+        <div
+          id="enemyHealth"
+          style="
+            position: absolute;
+            background: #818cf8;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+          "
+        ></div>
+      </div>
+      <div></div>
+    </div>
+    <div
+      id="displayText"
+      style="
+        position: absolute;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+      "
+    >
+      Tie
+    </div>
+    <canvas></canvas>
+	  </div>
+	
+	  <div class="reasonHeader">
+	  	<h1>Technical Sheet</h1>
+	  
+	  </div>
+	  
+	<div class="reasonParagraph"> 
+	
+		<p>Forest Fighters was my first major delve back into using JavaScript on a regular basis. Forest Fighters consist of one level and two players, that brawl it out until the timer ends or one of them is knocked down. The game itself is browser friendly and each player must use the same keyboard but different keys to control the players. The character sprites and the background were downloaded from itch.io, a truly awesome website that has great assets to use for free or for purchase. The goal behind this project was to refreshen my JavaScript skills since it had been some time since I had last used them and this was the perfect way to do it. To start the project, I used the canvas attribute in HTML and in that canvas, the whole game was designed in and that is also the play area. </p>
+		
+		
+		<h1 class="tech-title">Tech Stack</h1>
+		<ul class="tech-list">
+			<li class="tech-item">HTML</li>
+			<li class="tech-item">CSS</li>
+			<li class="tech-item">JavaScript</li>
+			<li class="tech-item">Animated Sprites</li>
+		</ul>
+	</div>
+	
+	
+	
+	
+	
+	<header class="pageHeader">
+	<h1> Forest Fighters</h1>
+	</header>
+	
+	<div class="controls">
+		<div class="playerControls">
+			<h3 class="controlHeader"> Player One Controls</h3>
+			<p> Jump - W</p>
+			<p> Move Right - D</p>
+			<p> Move Left - A</p>
+			<p> Attack - Space</p>		
+		</div>
+		
+		<div class="playerControls">
+			<h3 class="controlHeader"> Player Two Controls</h3>
+			<p>Jump - Up Arrow</p>
+			<p>Move Right - Right Arrow</p>
+			<p> Move Left - Left Arrow</p>
+			<p> Attack - Down Arrow</p>
+		</div>
+		
+		
+		
+		
+	</div>
+	
+
+	
+	<footer class="footerContainer">
+	<div class="copyRight">
+		<p class="copyRightMedia">&copy; Ethan Young 2022</p>
+	</div>
+	
+	<div class="email">
+		<a href="mailto:eyoung4319@icloud.com">eyoung4319@icloud.com</a>
+	</div>
+</footer>
+
+<p class="mediaCopyRight"> &copy; Ethan Young 2022</p>
+ 
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+		
+	<script src="util.js"></script>
+	<script src="classes.js"></script>
+	<script src="game.js"></script>
+	
+
+</body>
