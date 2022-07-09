@@ -5,6 +5,8 @@ const c = canvas.getContext('2d')
 
 canvas.width = 1024
 canvas.height = 576
+canvas.style.marginLeft = "50%"
+canvas.style.paddingBottom ="3rem"
 
 c.fillRect(0, 0, canvas.width, canvas.height)
 
@@ -332,3 +334,11 @@ window.addEventListener('keyup', (event) => {
       break
   }
 })
+
+
+window.addEventListener("keydown", function(e) {
+    if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+        e.preventDefault();
+    }
+}, false);
+

@@ -1,23 +1,52 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .pageHeader {
-	margin-left: 288px;
 	padding-top: 2rem;
-	padding-bottom: 1rem;
+	padding-bottom: 3rem;
 	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+}
+
+.begPara {
+	font-family:"Arial Black", Arial, "sans-serif";
+	text-align:justify;
+	padding-left: 30rem;
+	padding-right: 30rem;
+	padding-bottom: 5rem;
+}
+
+.controls {
+	display: flex;
 }
 
 .playerControls {
-	float: left;
-	margin: 50px;
+	flex: 1;
 	font-family: 'Press Start 2P', cursive;
-	padding-bottom: 3rem;
+	text-align: center;
+	margin-left: 250px;
+}
+
+.playerControlsTwo {
+	flex: 2;
+	font-family: 'Press Start 2P', cursive;
+
+	text-align: center;
 }
 
 .controlHeader {
 	text-decoration: underline;
 	font-family: 'Press Start 2P', cursive;
+	text-align: center;
 }
 
 .reasonHeader {
@@ -136,7 +165,11 @@ a:hover {
 
 /*footer*/
 
-
+.refreshButton {
+	background-color: green;
+	color: white;
+	margin: 10px;
+}
 
 
 
